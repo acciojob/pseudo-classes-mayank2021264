@@ -1,1 +1,42 @@
 /*  your css code here. If applicable */
+:root {
+	background-color: rgb(135,206,235)
+}
+
+p:first-child {
+	background-color: black;
+	color: white;
+}
+
+p:nth-child(2) {
+	color: initial;
+}
+p:last-child {
+	color: red;
+}
+/* Base styles for all list items */
+li {
+    background-color: gray;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Odd items (1st, 3rd, 5th...) */
+li:nth-child(odd) {
+    background-color: white;
+}
+
+/* First item */
+li:first-child {
+    font-size: 22px;
+}
+
+/* Last item */
+li:last-child {
+    font-size: 22px;
+}
+
+/* Third-to-last item (i.e., item 3 in a 5-item list) */
+li:nth-last-child(3) {
+    background-color: pink;
+}
